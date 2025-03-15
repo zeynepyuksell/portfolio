@@ -31,7 +31,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-black to-[#0a0a0a] py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="bg-gradient-to-b rounded-4xl from-black to-[#0a0a0a] py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/dark-stripes.png')]" />
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
