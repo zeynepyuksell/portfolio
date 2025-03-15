@@ -8,8 +8,8 @@ const ProjectsSection = () => {
       id: 1,
       title: "Earthquake Helper",
       description:
-        "Developed a machine learning platform with real-time analytics and predictive modeling capabilities.",
-      imageUrl: "/images/quakePath.png",
+        "Developed a earthquake platform with real-time analytics and predictive modeling capabilities.",
+      imageUrl: "/portfolio/images/quakePath.png",
       projectUrl: "#",
     },
     {
@@ -17,15 +17,15 @@ const ProjectsSection = () => {
       title: "E-Commerce Solution",
       description:
         "Built a scalable e-commerce platform with integrated payment processing and inventory management.",
-      imageUrl: "/images/expatCars.png",
+      imageUrl: "/portfolio/images/expatCars.png",
       projectUrl: "#",
     },
     {
       id: 3,
       title: "Mobile App Promotion",
       description:
-        "Created a cross-platform fitness application with workout tracking and social features.",
-      imageUrl: "/images/onyx.png",
+        "Created a promotion website for the OnyxCode mobile app",
+      imageUrl: "/portfolio/images/onyx.png",
       projectUrl: "#",
     },
   ];

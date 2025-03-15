@@ -55,7 +55,7 @@ const AboutSection = () => {
       <div className="flex flex-col md:flex-row md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-4">
         <Image
           className="rounded-xl"
-          src="/images/desk.avif"
+          src="/portfolio/images/desk.avif"
           alt="hero-image"
           width={600}
           height={600}

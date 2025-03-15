@@ -49,7 +49,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
               <img
-                src="/images/6.png"
+                src="/portfolio/images/6.png"
                 alt="hero-image"
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full"
                 width={500}
