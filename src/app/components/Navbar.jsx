@@ -1,22 +1,22 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import NavLink from "./Nav.Link";
+import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 
 const navlinks = [
   {
     title: "About",
-    path: "#about",
+    path: "/about",
   },
   {
     title: "Projects",
-    path: "#projects",
+    path: "/projects",
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "/contact",
   },
 ];
 
@@ -27,17 +27,23 @@ const Navbar = () => {
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
-          className=" text-2xl md:text-5xl text-white font-semibold"
+          className=" text-2xl md:text-5xl text-white font-semibold p-3"
         >
           ZEYNEP
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
-            <button onClick={()=> setNavbarOpen(true)} className="flex items-center px-3 py-2 border-state-200 text-state-200 text-white border-white">
+            <button
+              onClick={() => setNavbarOpen(true)}
+              className="flex items-center px-3 py-2 border-state-200 text-state-200 text-white border-white"
+            >
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
-            <button onClick={()=> setNavbarOpen(false)} className="flex items-center px-3 py-2 border-state-200 text-state-200 text-white border-white">
+            <button
+              onClick={() => setNavbarOpen(false)}
+              className="flex items-center px-3 py-2 border-state-200 text-state-200 text-white border-white"
+            >
               <XMarkIcon className="h-5 w-5" />
             </button>
           )}
@@ -56,7 +62,6 @@ const Navbar = () => {
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navlinks} /> : null}
-
     </nav>
   );
 };

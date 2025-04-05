@@ -1,6 +1,8 @@
 // ProjectsSection.js
+"use client";
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { motion } from "framer-motion";
 
 const ProjectsSection = () => {
   const projects = [
@@ -23,26 +25,29 @@ const ProjectsSection = () => {
     {
       id: 3,
       title: "Mobile App Promotion",
-      description:
-        "Created a promotion website for the OnyxCode mobile app",
+      description: "Created a promotion website for the OnyxCode mobile app",
       imageUrl: "/portfolio/images/onyx.png",
       projectUrl: "#",
     },
   ];
 
   return (
-    <section className="bg-gradient-to-b rounded-4xl from-black to-[#0a0a0a] py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/dark-stripes.png')]" />
+    <section className="bg-gray-900/80 border border-purple-500/20 rounded-4xl py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden shadow-2xl shadow-purple-900/20">
       <div className="relative max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600 mb-4 animate-fade-in-up">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 mb-6">
             Featured Projects
           </h2>
-          <p className="text-xl text-white mb-4 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 mb-4 max-w-2xl mx-auto leading-relaxed">
             Explore my portfolio of innovative solutions and cutting-edge
             applications
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (

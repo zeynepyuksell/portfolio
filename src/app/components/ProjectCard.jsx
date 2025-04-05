@@ -1,12 +1,15 @@
 import React from "react";
+import Image from "next/image";
 
 const ProjectCard = ({ project }) => {
   return (
     <div className="group bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-purple-900/40 transition-all duration-300 transform hover:-translate-y-2 relative h-full flex flex-col">
       <div className="relative overflow-hidden flex-shrink-0">
-        <img
+        <Image
           src={project.imageUrl}
           alt={project.title}
+          width={500}
+          height={300}
           className="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

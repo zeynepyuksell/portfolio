@@ -7,7 +7,7 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/outline";
 
-const EmailSection = () => {
+const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,7 +28,7 @@ const EmailSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -39,7 +39,7 @@ const EmailSection = () => {
         subject: "",
         message: "",
       });
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => {
         setSubmitSuccess(false);
@@ -48,19 +48,20 @@ const EmailSection = () => {
   };
 
   return (
-    <section className="rounded-4xl py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden mb-20">
-      <div className="relative max-w-7xl mx-auto">
+    <main className="flex min-h-screen flex-col bg-[#121212] pt-24">
+      <div className="container mx-auto px-6 py-12 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 mb-6">
-            Let&apos;s Connect
-          </h2>
-          <p className="text-xl text-gray-300 mb-4 max-w-2xl mx-auto leading-relaxed">
-            Have a question or want to work together? Feel free to reach out to me using the form below or through my social media channels.
+          <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+            Get In Touch
+          </h1>
+          <p className="text-gray-300 max-w-2xl mx-auto text-xl leading-relaxed">
+            Have a question or want to work together? Feel free to reach out to
+            me using the form below or through my social media channels.
           </p>
         </motion.div>
 
@@ -295,9 +296,67 @@ const EmailSection = () => {
             </form>
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="bg-gray-800/80 p-10 rounded-2xl shadow-2xl border border-gray-700/50 backdrop-blur-sm mb-20"
+        >
+          <h2 className="text-3xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-8">
+            <div className="border-b border-gray-700/50 pb-6">
+              <h3 className="text-xl font-semibold text-white mb-3">
+                What types of projects do you work on?
+              </h3>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                I specialize in web development projects, including responsive
+                websites, web applications, and e-commerce solutions. I&apos;m
+                also interested in mobile app development using React Native.
+              </p>
+            </div>
+
+            <div className="border-b border-gray-700/50 pb-6">
+              <h3 className="text-xl font-semibold text-white mb-3">
+                What is your typical response time?
+              </h3>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                I aim to respond to all inquiries within 24 hours during
+                business days. For urgent matters, please indicate this in your
+                message.
+              </p>
+            </div>
+
+            <div className="border-b border-gray-700/50 pb-6">
+              <h3 className="text-xl font-semibold text-white mb-3">
+                Do you offer freelance services?
+              </h3>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Yes, I offer freelance web development services. I&apos;m
+                available for both short-term projects and long-term
+                collaborations.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-white mb-3">
+                What is your pricing structure?
+              </h3>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                My pricing varies depending on the scope and complexity of the
+                project. I offer both fixed-price and hourly rate options.
+                Please contact me with your project details for a personalized
+                quote.
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </div>
-    </section>
+    </main>
   );
 };
 
-export default EmailSection;
+export default ContactPage;
