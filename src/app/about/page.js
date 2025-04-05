@@ -213,7 +213,6 @@ const AboutPage = () => {
               width={600}
               height={600}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
           </div>
           <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <div className="flex items-center mb-4">

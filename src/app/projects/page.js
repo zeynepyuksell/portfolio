@@ -111,7 +111,6 @@ const ProjectsPage = () => {
                     height={300}
                     className="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
 
                 <div className="p-6 flex-1 mt-4 flex flex-col gap-4">
