@@ -176,7 +176,7 @@ const TAB_DATA = [
               </h3>
               <p className="text-gray-300 mt-1">Full Stack Web Development</p>
               <p className="text-gray-400 text-sm mt-2 bg-gray-700/50 inline-block px-3 py-1 rounded-full">
-                Issued: 2023
+                2025
               </p>
             </div>
           </div>
